@@ -1,0 +1,65 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #aaa;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.nav-box{
+  width: 100vw;
+  box-sizing: border-box;
+  padding: 30rpx 10rpx;
+  display: flex;
+}
+.nav-box .item-box{
+    width: 25%;
+}
+.nav-box .item-box image{
+  width: 100%;
+  height: 200rpx;
+}
+.lou-box{
+  width: 100vw;
+}
+.lou-box .tit-img{
+  width: 1000rpx;
+  height: 80rpx;
+}
+.lou-box .main-img-box{
+  margin-bottom: 20rpx;
+  margin-top: 20rpx;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+.lou-box .main-img-box image:nth-child(1){
+  height: 600rpx;
+}
+.lou-box .main-img-box image:nth-child(4){
+ position: absolute;
+  top: 300rpx;
+  left: 33.33%;
+}
+.lou-box .main-img-box image:nth-child(5){
+  position: absolute;
+   top: 300rpx;
+   left: 66.66%;
+ }
+.lou-box .main-img-box image{
+  width: 33.33%;
+  height: 300rpx;
+}

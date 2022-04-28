@@ -1,0 +1,26 @@
+<!--pages/fenlei/fenlei.wxml-->
+<van-search value="{{ value }}" bindtap="tttfn"  background="#18C8AB" placeholder="请输入搜索关键词" />
+
+<view class="fl">
+    <scroll-view class="left" scroll-y scroll-top="{{h}}">
+        <van-sidebar bind:change="onchange">
+            <block wx:for="{{ceList}}" wx:key="*this">
+                <van-sidebar-item title="{{item.cat_name}}">
+                </van-sidebar-item>
+            </block>
+        </van-sidebar>
+    </scroll-view>
+
+    <scroll-view class="right" scroll-y scroll-top="{{h}}">
+        <view class="tit">/{{title}}/</view>
+        <view class="boxx">
+            <view class="lists" wx:for="{{children}}" wx:key="*this">
+                <view class="item-box">
+                    <image src="{{item.cat_icon}}"></image>
+                    <view>{{item.cat_name}}</view>
+                </view>
+            </view>
+        </view>
+
+    </scroll-view>
+</view>

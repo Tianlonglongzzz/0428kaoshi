@@ -1,0 +1,33 @@
+<van-search value="{{ value }}"  background="#18C8AB" placeholder="请输入搜索关键词" />
+<view class="bnr-box">
+      <swiper indicator-dots
+        autoplay interval="2000" duration="500">
+        <block wx:for="{{list}}" wx:key="*this">
+          <swiper-item>
+            <image src="{{item.image_src}}"></image>
+          </swiper-item>
+        </block>x
+      </swiper>
+</view>
+<view class="nav-box">
+  <block wx:for="{{navList}}" wx:key="*this">
+    <view class="item-box">
+      <image class="tit-img" src="{{item.image_src}}"></image>
+    </view>
+
+  </block>
+</view>
+
+<view class="lou-box">
+  <block wx:for="{{louList}}" wx:key="*this">
+      <image class="tit-img" src="{{item.floor_title.image_src}}"></image>
+      <view class="main-img-box">
+        <image src="https://api-hmugo-web.itheima.net/pyg/pic_floor01_1@2x.png"></image>
+        <image src="https://api-hmugo-web.itheima.net/pyg/pic_floor01_2@2x.png"></image>
+        <image src="https://api-hmugo-web.itheima.net/pyg/pic_floor01_3@2x.png"></image>
+        <image src="https://api-hmugo-web.itheima.net/pyg/pic_floor01_4@2x.png"></image>
+        <image src="https://api-hmugo-web.itheima.net/pyg/pic_floor01_5@2x.png"></image>
+      </view>
+  </block>
+</view>
+
